@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_filter :require_authentication
-  before_action :set_user
+  before_filter :require_authentication, except: [:new, :create]
+  before_action :set_user, except: [:new, :create]
 
   def index
     render :index
@@ -18,9 +18,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path, :notice => "Welcome, #{user.name}!"
+      redirect_to root_path, :notice => "Welcome, #{@user.name}!"
     else
-      flash[:error] = 'Email and Password cannot be blank'  #'Username has already been taken.'
+      flash[:error] = 'Name, Email or Password cannot be blank. Please fill in all fields.'  #'Username has already been taken.'
       render :new
     end
   end

@@ -4,6 +4,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 5.0'
 gem 'sprockets-rails'
 
+gem 'figaro'
+
 gem 'validate_url'
 gem 'valid_url'
 

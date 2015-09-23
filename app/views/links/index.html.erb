@@ -1,4 +1,4 @@
-<h1>Links Index Page</h1>
+<h1>Home Page</h1>
 
 <%= form_for [@user, @link], url: user_links_path(@user), method: :post do |f| %>
   <%= f.label :url %>
@@ -15,7 +15,7 @@
 
 <% @links.read.each do |link| %>
   <%# if link.status == "read" %>
-    <div class="link">
+    <div class="read-links">
       <h3><a href= <%= link.url %> target="_blank"><%= link.url %></h3>
       <dl>
         <h4 class="status">Status: <%= link.status %></h4>
@@ -23,6 +23,7 @@
           <%#= link_to "Mark as Read", read_user_link_path(@user, link), class: 'read' %>
         <%# else %>
           <%= link_to "Mark as Unread", unread_user_link_path(@user, link), class: 'unread' %>
+          <%= link_to "Recommend Link", user_link_recommend_path(@user, link) %>
         <%# end %>
       </dl>
     </div>
@@ -31,7 +32,7 @@
 <% end %>
 
 <% @links.unread.each do |link| %>
-  <div class="link">
+  <div class="unread-link">
     <h3><a href= <%= link.url %> target="_blank"><%= link.url %></h3>
     <dl>
       <h4 class="status">Status: <%= link.status %></h4>
