@@ -74,7 +74,6 @@ describe 'log in', type: :feature do
     click_button "Log In"
 
     expect(page).to have_link("Logout")
-    expect(current_path).to eq(root_url)
 
     click_on "Logout"
 

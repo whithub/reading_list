@@ -3,11 +3,11 @@
 class Link < ActiveRecord::Base
   belongs_to :user
 
-  validates :url, presence: true
+  # validates :url, presence: true
   validates :url, url: true
   # validates :url, :url => {:allow_nil => true}
   # validates :url, :url => {:allow_blank => true}
-  # validates :url, :url => {:no_local => true}
+  validates :url, :url => {:no_local => true}
 
 
   enum status: { unread: 0, read: 1 }

@@ -16,7 +16,7 @@ class LinksController < ApplicationController
     if @link.save
       redirect_to root_path #, notice: "Ticket Created"
     else
-      redirect_to root_path, notice: @link.errors.full_messages.join(", ")
+      redirect_to root_path, notice: "URL not valid" #@link.errors.full_messages.join(", ")
     end
   end
 
