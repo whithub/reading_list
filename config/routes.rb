@@ -15,8 +15,7 @@ Rails.application.routes.draw do
         get :unread
         get :read
       end
-      get '/recommend', to: 'recommendations#send_email'
-      post '/recommend', to: 'recommendations#send_email'
+      resources :recommendations, only: [:new, :create]
     end
   end
 

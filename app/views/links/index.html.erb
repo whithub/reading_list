@@ -1,49 +1,40 @@
 <h1>Home Page</h1>
 
-<%= form_for [@user, @link], url: user_links_path(@user), method: :post do |f| %>
-  <%= f.label :url %>
-  <%= f.text_field :url %> <br>
+<%= render "form" %>
 
-  <%= f.label :status %>
-  <%= f.select :status, [['Unread', :unread], ['Read', :read]] %>
 
-  <%= f.submit "Submit New Link" %>
-<% end %>
 
 <br>
 <br>
+<div class="links">
+  <% @links.read.each do |link| %>
+    <%# if link.status == "read" %>
+      <div class="read-links">
+        <h3><a href= <%= link.url %> target="_blank"><%= link.url %></h3>
+        <dl>
+          <h4 class="status">Status: <%= link.status %></h4>
+          <%= link_to "Mark as Unread", unread_user_link_path(@user, link), id: 'unread-link' %>
+          <%= link_to "Recommend Link", new_user_link_recommendation_path(@user, link) %>
+        </dl>
+      </div>
 
-<% @links.read.each do |link| %>
-  <%# if link.status == "read" %>
-    <div class="read-links">
+    <br>
+  <% end %>
+
+  <% @links.unread.each do |link| %>
+    <div class="unread-links">
       <h3><a href= <%= link.url %> target="_blank"><%= link.url %></h3>
       <dl>
         <h4 class="status">Status: <%= link.status %></h4>
         <%# if link.status == "unread" %>
-          <%#= link_to "Mark as Read", read_user_link_path(@user, link), class: 'read' %>
+          <%= link_to "Mark as Read", read_user_link_path(@user, link), id: 'read-link' %>
         <%# else %>
-          <%= link_to "Mark as Unread", unread_user_link_path(@user, link), class: 'unread' %>
-          <%= link_to "Recommend Link", user_link_recommend_path(@user, link) %>
+          <%#= link_to "Mark as Unread", unread_user_link_path(@user, link), class: 'unread' %>
         <%# end %>
       </dl>
     </div>
 
-  <br>
-<% end %>
-
-<% @links.unread.each do |link| %>
-  <div class="unread-link">
-    <h3><a href= <%= link.url %> target="_blank"><%= link.url %></h3>
-    <dl>
-      <h4 class="status">Status: <%= link.status %></h4>
-      <%# if link.status == "unread" %>
-        <%= link_to "Mark as Read", read_user_link_path(@user, link), class: 'read' %>
-      <%# else %>
-        <%#= link_to "Mark as Unread", unread_user_link_path(@user, link), class: 'unread' %>
-      <%# end %>
-    </dl>
-  </div>
-
-  <br>
-<% end %>
+    <br>
+  <% end %>
+</div>
 

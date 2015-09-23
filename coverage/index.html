@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-09-23T14:36:26-06:00">2015-09-23T14:36:26-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-09-23T15:31:04-06:00">2015-09-23T15:31:04-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.79%</span></span>
+    (<span class="covered_percent"><span class="green">92.65%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.33
+         1.34
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>44</b> files in total.
-    <b>341</b> relevant lines. 
-    <span class="green"><b>313</b> lines covered</span> and
-    <span class="red"><b>28</b> lines missed </span>
+    <b>340</b> relevant lines. 
+    <span class="green"><b>315</b> lines covered</span> and
+    <span class="red"><b>25</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -72,22 +72,22 @@
       
       <tr>
         <td class="strong"><a href="#4ff69b26c6d689d4604798a1dab5bb9a63b32d8e" class="src_link" title="app/controllers/links_controller.rb">app/controllers/links_controller.rb</a></td>
-        <td class="red strong">67.86 %</td>
-        <td>50</td>
-        <td>28</td>
-        <td>19</td>
-        <td>9</td>
-        <td>1.7</td>
+        <td class="red strong">66.67 %</td>
+        <td>64</td>
+        <td>33</td>
+        <td>22</td>
+        <td>11</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d49325c3d75fa05f07d86c6c0eceb9119f3ed858" class="src_link" title="app/controllers/recommendations_controller.rb">app/controllers/recommendations_controller.rb</a></td>
-        <td class="red strong">33.33 %</td>
-        <td>15</td>
-        <td>9</td>
-        <td>3</td>
-        <td>6</td>
-        <td>0.3</td>
+        <td class="red strong">50.0 %</td>
+        <td>23</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -181,13 +181,13 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#48d834170621900dbfb495c709993fef13b8eac9" class="src_link" title="app/mailers/recommendations.rb">app/mailers/recommendations.rb</a></td>
-        <td class="red strong">60.0 %</td>
-        <td>13</td>
-        <td>5</td>
+        <td class="strong"><a href="#9481381787fcb2090a98d4e29a08d32696ab96be" class="src_link" title="app/mailers/recommendation_mailer.rb">app/mailers/recommendation_mailer.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>18</td>
+        <td>4</td>
         <td>3</td>
-        <td>2</td>
-        <td>0.6</td>
+        <td>1</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -743,11 +743,11 @@
         <div class="source_table" id="4ff69b26c6d689d4604798a1dab5bb9a63b32d8e">
   <div class="header">
     <h3>app/controllers/links_controller.rb</h3>
-    <h4><span class="red">67.86 %</span> covered</h4>
+    <h4><span class="red">66.67 %</span> covered</h4>
     <div>
-      <b>28</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>9</b> lines missed.</span>
+      <b>33</b> relevant lines. 
+      <span class="green"><b>22</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
     </div>
   </div>
   
@@ -763,283 +763,283 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_filter :require_authentication</code>
+          <code class="ruby">  respond_to :html, :json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before_action :set_user</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :require_authentication</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
+          <code class="ruby">  before_action :set_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="6">
+        <li class="covered" data-hits="10" data-linenumber="8">
           <span class="hits">10</span>
           
           <code class="ruby">    @links = Link.all</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="7">
+        <li class="covered" data-hits="10" data-linenumber="9">
           <span class="hits">10</span>
           
           <code class="ruby">    @link = Link.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
           <code class="ruby">    @link = Link.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def create</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @link = Link.new(link_params)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    if @link.save</code>
+          <code class="ruby">  def create</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      redirect_to root_path #, notice: &quot;Ticket Created&quot;</code>
+          <code class="ruby">    @link = Link.new(link_params)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    else</code>
+          <code class="ruby">    if @link.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      redirect_to root_path, notice: &quot;URL not valid&quot; #@link.errors.full_messages.join(&quot;, &quot;)</code>
+          <code class="ruby">      respond_to do |format|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="2" data-linenumber="20">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">        format.html { redirect_to root_path, notice: &quot;The link was created.&quot; }   #When someone request html, redirect...</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">        format.json { render json: @link }                                        #Resond to a json request, and we&#39;re responding with a json version of the link</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">  def read</code>
+          
+          <code class="ruby">    else</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="24">
           
           
-          <code class="ruby">    set_link</code>
+          <code class="ruby">      respond_to do |format|</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="25">
           
           
-          <code class="ruby">    @link.read!</code>
+          <code class="ruby">        format.html { redirect_to root_path, notice: &quot;The link was not created.&quot; }</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="26">
           
           
-          <code class="ruby">    redirect_to root_url #, notice: &quot;Ticket &#39;#{@ticket.name}&#39; is back in Current Sprint.&quot;</code>
+          <code class="ruby">        format.json { render json: { messages: @link.errors.messages} }   #link.errors.full_messages =&gt; “Name has already been taken”</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="29">
           
-          <code class="ruby">  def unread</code>
+          
+          <code class="ruby">    # @link = Link.new(link_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">    set_link</code>
+          <code class="ruby">    # if @link.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">    @link.unread!</code>
+          <code class="ruby">    #   redirect_to root_path #, notice: &quot;Ticket Created&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">    redirect_to root_url #, notice: &quot;Ticket &#39;#{@ticket.name}&#39; is back in Current Sprint.&quot;</code>
+          <code class="ruby">    # else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    #   redirect_to root_path, notice: &quot;URL not valid&quot; #@link.errors.full_messages.join(&quot;, &quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def link_params</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    params.require(:link).permit(:url, :status)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def read</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">    set_link</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">    @link.read!</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">    redirect_to root_url #, notice: &quot;Ticket &#39;#{@ticket.name}&#39; is back in Current Sprint.&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def set_user</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="43">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    @user = User.find(session[:user_id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">  def set_link</code>
+          <code class="ruby">  def unread</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="missed" data-hits="0" data-linenumber="44">
           
           
-          <code class="ruby">    @link = Link.find(params[:id])</code>
+          <code class="ruby">    set_link</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">    @link.unread!</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">    redirect_to root_url #, notice: &quot;Ticket &#39;#{@ticket.name}&#39; is back in Current Sprint.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -1048,7 +1048,91 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def link_params</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    params.require(:link).permit(:url, :status)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_user</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="57">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @user = User.find(session[:user_id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_link</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
+          
+          <code class="ruby">    @link = Link.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">end</code>
@@ -1061,11 +1145,11 @@
         <div class="source_table" id="d49325c3d75fa05f07d86c6c0eceb9119f3ed858">
   <div class="header">
     <h3>app/controllers/recommendations_controller.rb</h3>
-    <h4><span class="red">33.33 %</span> covered</h4>
+    <h4><span class="red">50.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -1090,73 +1174,121 @@
           <code class="ruby">  def send_email</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="missed" data-hits="0" data-linenumber="4">
           
           
-          <code class="ruby">    # email = params[&quot;email&quot;]</code>
+          <code class="ruby">    @email_address = recipient</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="5">
           
           
-          <code class="ruby">    subject = email_subject[&quot;subject&quot;]</code>
+          <code class="ruby">    mail(to: recipient.email_address_with_name,</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">    recipient = email_recipient[&quot;recipient&quot;]</code>
+          <code class="ruby">      bcc: [&quot;bcc@example.com&quot;, &quot;Order Watcher &lt;watcher@example.com&gt;&quot;])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">    Recommendations.deliver_recommend_link_email(recipient, subject)</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    return if request.xhr?</code>
+          <code class="ruby">  # def send_email</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    render :text =&gt; &#39;Message sent successfully&#39;</code>
+          <code class="ruby">    # respond_to do |format|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  #     if email_address.save</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  #       # Sends email to user when user is created.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">  def index</code>
+          
+          <code class="ruby">  #       RecommendationMailer.sample_email(email_address).deliver</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">    render :file =&gt; &#39;app\views\recommendations\email.html.erb&#39;</code>
+          <code class="ruby">  #       redirect_to root_path, notice: &quot;Email sent.&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  #       # format.html { redirect_to @user, notice: &#39;User was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  #       # format.json { render :show, status: :created, location: @user }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  #     else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  #       redirect_to root_path, notice: &quot;Unable to send email. Please try again.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  #       # format.html { render :new }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  #       # format.json { render json: @user.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
@@ -1790,14 +1922,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="48d834170621900dbfb495c709993fef13b8eac9">
+        <div class="source_table" id="9481381787fcb2090a98d4e29a08d32696ab96be">
   <div class="header">
-    <h3>app/mailers/recommendations.rb</h3>
-    <h4><span class="red">60.0 %</span> covered</h4>
+    <h3>app/mailers/recommendation_mailer.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
+      <b>4</b> relevant lines. 
       <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -1807,7 +1939,7 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">class Recommendations &lt; ApplicationMailer</code>
+          <code class="ruby">class RecommendationMailer &lt; ApplicationMailer</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
@@ -1846,28 +1978,28 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  def recommend_link_email(recipient, subject)</code>
+          
+          <code class="ruby">  # def recommend_link_email(recipient, subject)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    @subject = subject</code>
+          <code class="ruby">  #   @subject = subject</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">    @recipient = recipient</code>
+          <code class="ruby">  #   @recipient = recipient</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -1877,6 +2009,36 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sample_email(recipient)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    mail(to: recipient.email, subject: &#39;Recommendation Email&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -5623,7 +5785,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">RSpec.describe Recommendations, type: :mailer do</code>
+          <code class="ruby">RSpec.describe RecommendationMailer, type: :mailer do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">

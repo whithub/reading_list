@@ -1,0 +1,5 @@
+<%= form_for :recommendation, url: user_link_recommendations_path(@user, @link), method: :post do |f| %>
+  <%= f.label :send_to_email %>
+  <%= f.email_field :send_to_email, required: true %>
+  <%= f.submit %>
+<% end %>

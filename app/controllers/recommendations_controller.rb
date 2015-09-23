@@ -1,15 +1,20 @@
 class RecommendationsController < ApplicationController
 
-  def send_email
-    # email = params["email"]
-    subject = email_subject["subject"]
-    recipient = email_recipient["recipient"]
-    Recommendations.deliver_recommend_link_email(recipient, subject)
-    return if request.xhr?
-    render :text => 'Message sent successfully'
+  def new
+    @user = current_user
+    @link = Link.find(params[:link_id])
   end
 
-  def index
-    render :file => 'app\views\recommendations\email.html.erb'
+  def create
+    RecommendationMailer.sample_email(recommendation_params[:send_to_email]).deliver_now
+    flash[:notice] = 'Email sent'
+    redirect_to root_path
   end
+
+  private
+
+  def recommendation_params
+    params.require(:recommendation).permit(:send_to_email)
+  end
+
 end
